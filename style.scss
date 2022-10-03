@@ -19,7 +19,6 @@ $fnt-wght2: 900;
     padding: 0;
     font-size: 15px;
     font-family: 'Overpass', sans-serif;
-    color: $clr-neut3;
     font-weight: $fnt-wght1;
 }
 
@@ -34,6 +33,7 @@ p {
     margin: 0.5rem 0 1rem 0;
     letter-spacing: 0.02rem;
     line-height: 1rem;
+    color: $clr-neut3;
 }
 
 
@@ -49,6 +49,7 @@ body {
         background-color: $clr-neut4;
         border-radius: 1.5rem;
         padding: 1rem;
+        transition: all 0.3s ease-in;
     }
 }
 
@@ -67,7 +68,7 @@ body {
     }
 }
 
-.rating {
+.ratings {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,16 +77,20 @@ body {
         height: 2rem;
         width: 2rem;
         border-radius: 1rem;
-        background-color: $clr-neut6;
         display: flex;
         align-items: center;
         justify-content: center;
         transition: all 0.3s ease-in;
         margin-bottom: 1.5rem;
-        margin-top: 0.5rem;
+        margin-top: 0.5rem;  
+    }
+
+    .rating {
+        background-color: $clr-neut6;
 
         a {
             font-size: 0.8rem;
+            color: $clr-neut2;
         }
 
         &:hover {
@@ -94,7 +99,7 @@ body {
             a {
                 color: $clr-neut1;
             }
-        }  
+        }
     }
 }
 
@@ -129,10 +134,14 @@ footer {
     }
 
     .rating_display {
+        font-size: 0.7rem;
+        color: $clr-prim1;
+    }
+    .output_rating {
         background-color: $clr-neut6;
         padding: 0.3rem 0.8rem;
-        font-size: 0.7rem;
         border-radius: 0.8rem;
+        font-size: 0.7rem;
         color: $clr-prim1;
     }
 
@@ -143,11 +152,32 @@ footer {
         margin-right: 0.2rem;
     }
 }
+
+.box_hidden {
+    display: none;
+}
+
+.rating_on {
+    background-color: $clr-prim1;
+    cursor: pointer;
+
+    a {
+        color: $clr-neut1;
+        font-size: 0.8rem;
+    }
+    
+}
+
 .attribution {
     position: fixed;
     bottom: 0px;
-}
+    font-size: 11px; 
+    text-align: center;
+    color: $clr-neut2;
 
-#box_2 {
-    display: none;
+    a {
+        color: $clr-neut1;
+        font-size: 12px; 
+        text-decoration: none;
+    }
 }

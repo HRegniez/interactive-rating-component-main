@@ -10,11 +10,7 @@
 
   <link rel="stylesheet" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
 
@@ -26,7 +22,7 @@
     <header>
 
       <div class="circle">
-        <img src="/images/icon-star.svg" alt="star">
+        <img src="./images/icon-star.svg" alt="star">
       </div>
 
       <h1>
@@ -43,15 +39,15 @@
       </p>
 
       <!------------------------------------------------------------ Rating -->
-      <li class="rating">
-        <ul><a>1</a></ul>
-        <ul><a>2</a></ul>
-        <ul><a>3</a></ul>
-        <ul><a>4</a></ul>
-        <ul><a>5</a></ul>
+      <li class="ratings">
+        <ul id="1" class="rating"><a>1</a></ul>
+        <ul id="2" class="rating"><a>2</a></ul>
+        <ul id="3" class="rating"><a>3</a></ul>
+        <ul id="4" class="rating"><a>4</a></ul>
+        <ul id="5" class="rating"><a>5</a></ul>
       </li>
 
-      <button>
+      <button class="submit_btn">
         Submit
       </button>
 
@@ -60,14 +56,14 @@
  
   <!------------------------------------------------------------------------------------------------- Component 2 -->
 
-  <div id='box_2' class="container box_2">
+  <div id='box_2' class="container box_hidden">
 
 
     <footer>
 
       <img src="./images/illustration-thank-you.svg" alt="image of a transaction done from a mobile !">
 
-      <p class="rating_display">  You selected <span><!-- Add rating here --></span> out of 5</span></p>
+      <p class="output_rating">  You selected <span class="rating_display"><!-- Add rating here --></span> out of 5</span></p>
       <h2>
         Thank you!
       </h2>
@@ -84,5 +80,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/HRegniez">Hregniez</a>.
   </div>
+
+  <script src="./app.js"></script>
 </body>
 </html>
