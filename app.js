@@ -9,12 +9,11 @@ const submitBtn = document.querySelector('.submit_btn');
 ratings.forEach(rating => {
     rating.addEventListener('click', () => {
         for (i=0; i<ratings.length; i++) {
+            
             ratings[i].classList.remove('rating_on');
             ratings[i].classList.add('rating');
         }
         for (i=0; i<rating.id; i++) {
-            console.log(i);
-            console.log(rating.id);
             ratings[i].classList.remove('rating');
             ratings[i].classList.add('rating_on');
 
