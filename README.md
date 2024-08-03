@@ -12,6 +12,8 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [Author](#author)
 ## Overview
 
+I did this small project to practice handling user interactions and updating the DOM
+
 ### The challenge
 
 Users should be able to:
